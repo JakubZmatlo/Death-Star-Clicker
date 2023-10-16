@@ -1,0 +1,145 @@
+* {
+    font-family: "VT323" , monospace;
+    user-select: none;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+body {
+    background-image:url(./bg-dthstr.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#celek{
+    display: flex;
+    flex-direction: column;
+}
+
+#deathstar {
+    max-width: 200px;
+    margin: auto;
+    transition: .3s ease;
+    cursor: pointer;
+    overflow: hidden;
+    padding: 10px;
+}
+
+#deathstar:hover {
+    transform: scale(1.1);
+}
+
+#counter {
+    color: whitesmoke;
+    margin: auto;
+    size: 100px;
+    text-align: center;
+    padding: 10px;
+}
+
+#upgrady{
+    background-repeat: no-repeat  ;
+}
+
+#upgrade1{
+    margin: auto;
+}
+
+#upgrade2{
+    margin: auto;
+}
+
+#upgrade3{
+    margin: auto;
+}
+
+#upgrade4{
+    margin: auto;
+}
+
+#shopText{
+    margin: auto;
+    color: aliceblue;
+    background-color: black;
+    width: max-content;
+    padding: 10px;
+}
+
+#clickUpgrade {
+    font-size: medium;
+    color: aliceblue;
+    cursor: pointer;
+    background-color: black;
+    margin: auto;
+    height: 250px;
+    width: 500px;
+} 
+
+#upgrade1Text {
+    margin: auto;
+    color: aliceblue;
+    background-color: black;
+    width: max-content;
+    padding: 5px;
+}
+
+#autoclickUpgrade{
+    font-size: medium;
+    color: aliceblue;
+    cursor: pointer;
+    background-color: black;
+    margin: auto;
+    height: 250px;
+    width: 500px;
+}
+
+#upgrade2Text {
+    margin: auto;
+    color: aliceblue;
+    background-color: black;
+    width: max-content;
+    padding: 5px;
+}
+
+#autoclick2Upgrade{
+    font-size: medium;
+    color: aliceblue;
+    cursor: pointer;
+    background-color: black;
+    margin: auto;
+    height: 250px;
+    width: 500px;
+}
+
+#upgrade3Text {
+    margin: auto;
+    color: aliceblue;
+    background-color: black;
+    width: max-content;
+    padding: 5px;
+}
+
+#autoclick3Upgrade{
+    font-size: medium;
+    color: aliceblue;
+    cursor: pointer;
+    background-color: black;
+    margin: auto;
+    height: 250px;
+    width: 500px;
+}
+
+#upgrade4Text {
+    margin: auto;
+    color: aliceblue;
+    background-color: black;
+    width: max-content;
+    padding: 5px;
+}
+
+.centervec {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    overflow: hidden;
+}
