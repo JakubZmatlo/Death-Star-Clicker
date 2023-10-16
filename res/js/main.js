@@ -25,21 +25,14 @@ let autoclicker3Cost = 50000;
 
 autoclickUpgrade.onclick = () => {
     if (numberOfCookies >= autoclickerCost) {
-        //odecist susenky
         numberOfCookies -= autoclickerCost;
         autoclickerCost *= 2;
         upgrade2Text.innerText = "Buy Podracer: " + autoclickerCost;
-        //numberOf Cookies = numberOf Cookies - 100
-        //aktualizovat odstavec se susenkama
         counter.innerText =  "Hits: " + numberOfCookies;
         autoclickIncrese++;
-        //clear
         clearInterval(autoclicker)
-        //spustit interval 
         autoclicker = setInterval(() => {
-            //zvednout o nejake cislo
             numberOfCookies += autoclickIncrese
-            //aktualizovat odstavec
             counter.innerText = "Hits: " + numberOfCookies;
             updateInfo();
         }, 1000);
@@ -48,21 +41,14 @@ autoclickUpgrade.onclick = () => {
 
 autoclick2Upgrade.onclick = () => {
     if (numberOfCookies >= autoclicker2Cost) {
-        //odecist susenky
         numberOfCookies -= autoclicker2Cost;
         autoclicker2Cost *= 2;
         upgrade3Text.innerText = "Buy X-Wing: " + autoclicker2Cost;
-        //numberOf Cookies = numberOf Cookies - 100
-        //aktualizovat odstavec se susenkama
         counter.innerText =  "Hits: " + numberOfCookies;
         autoclick2Increse++;
-        //clear
         clearInterval(autoclicker2)
-        //spustit interval 
         autoclicker2 = setInterval(() => {
-            //zvednout o nejake cislo
             numberOfCookies += autoclick2Increse
-            //aktualizovat odstavec
             counter.innerText = "Hits: " + numberOfCookies;
             updateInfo();
         }, 500);
@@ -72,33 +58,22 @@ autoclick2Upgrade.onclick = () => {
 
 autoclick3Upgrade.onclick = () => {
     if (numberOfCookies >= autoclicker3Cost) {
-        //odecist susenky
         numberOfCookies -= autoclicker3Cost;
         autoclicker3Cost *= 2;
         upgrade4Text.innerText = "Buy Millennium Falcon: " + autoclicker3Cost;
-        //numberOf Cookies = numberOf Cookies - 100
-        //aktualizovat odstavec se susenkama
         counter.innerText =  "Hits: " + numberOfCookies;
         autoclick3Increse++;
-        //clear
         clearInterval(autoclicker)
-        //spustit interval 
         autoclicker = setInterval(() => {
-            //zvednout o nejake cislo
             numberOfCookies += autoclick3Increse
-            //aktualizovat odstavec
             counter.innerText = "Hits: " + numberOfCookies;
             updateInfo();
         }, 250);
     }
 }
 
-// {} - scope
 cookie.onclick = () => {
     console.log("click");
-    //numberOfCookies = numberOfCookies + 1;
-    //numberOfCookies += 1;
-    // ++ inkrement
     numberOfCookies +=costOfClickUpgradeIncrease;
     console.log(numberOfCookies);
     counter.innerHTML = "Hits: " + numberOfCookies;
@@ -106,15 +81,11 @@ cookie.onclick = () => {
 
 const costOfClickUpgradeFunction = () => {
     if (numberOfCookies >= costOfClickUpgrade) {
-        //Odecteme cenu upgradu 
-        // pocet susenek a odectu 20
         costOfClickUpgrade += 0;
         upgrade1Text.innerText = "Buy Lightsaber: " + costOfClickUpgrade;
         numberOfCookies -= costOfClickUpgrade;
-        //aktualizace odstavce 
         counter.innerText = "Hits: " + numberOfCookies;
         costOfClickUpgrade *= 2;
-        //Zvedneme pocet susenek na kliknuti
         costOfClickUpgradeIncrease++;
     }
 };
